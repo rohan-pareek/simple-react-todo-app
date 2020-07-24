@@ -52,6 +52,8 @@
 
 .todo-list {
   width: 100%;
+  max-height: 500px;
+  overflow: auto;
 }
 
 .todo-item {
@@ -112,6 +114,34 @@
   float: left;
   margin-right: 5px;
   background-color: pink;
+}
+
+.todo-filter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.todo-filter button {
+  border: none;
+  background: transparent;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.todo-filter button.active {
+  font-weight: bolder;
+  outline: none;
+  border-bottom: 2px solid #444;
+}
+
+.todo-filter button span {
+  background-color: #999;
+  border-radius: 10px;
+  color: #fff;
+  padding: 2px 5px;
 }
 
 @media (max-width: 600px) {
